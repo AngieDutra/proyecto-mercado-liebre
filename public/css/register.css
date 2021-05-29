@@ -1,0 +1,78 @@
+/***************** ETIQUETAS **********************/
+main form {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding:2rem 0;
+}
+main form fieldset{
+    width:90%;
+}
+main fieldset input{
+    width: 100%;
+    padding:0.5rem;
+    border-radius: 5px;
+}
+main button{
+    width: 40%;
+    background-color:#03264C;
+    padding:1rem;  
+    transition: all 1 ease-in-out;
+}
+main button a{
+    text-decoration: none;
+    color: #fff;
+}
+main button:hover{
+    background-color: #0022AA;
+}
+/***************** CLASES **********************/
+.form-intereses, .form-perfil{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+.form-intereses input, .form-perfil input{
+    width:10%;
+}
+.form-intereses label{
+    width:90%;
+    padding:1.2rem;
+}
+.form-password{  
+    flex-direction:column;
+}
+.form-botones{
+    width:90%;
+    padding: 2rem;
+    display:flex;
+    justify-content:space-around;
+}
+/**************** MEDIA QUERIES ****************/
+/* Tablet */
+@media (min-width: 361px){
+    .nombre-apellido{
+        width:45%;
+    }
+}
+/* Desktop */
+@media (min-width:769px){
+    main form{
+        align-items:center;
+    }
+    main form fieldset{
+        width:45%;
+    }
+    .form-intereses label{
+        width:40%;
+    }
+    .form-password input{
+        width:49%;
+    }
+    .form-password{
+        width:90%;
+        display: flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+}

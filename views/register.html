@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/register.css">
+
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <header>
+        <div class="header-txt">
+            <div class="header-top">
+                <figure class="logo"><img src = "/img/logo-mercado-liebre.svg" alt="logo"></figure>
+                <form class="buscador">
+                    <input type="search" name="buscar" class="buscar" placeholder="Buscar productos, marcas y más" >
+                    <button type="submit" name="buscar"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="botom-header">
+                <h2><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+                <!--Menu hamburguesa-->
+                <button class="hamburguesa"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <!--Menu de navegacion-->
+        <nav>
+            <ul class="left-nav">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <fieldset class="nombre-apellido">
+                <input type="text" name="name" id="name" placeholder="Nombre de usuario" required>
+            </fieldset>
+            <fieldset class="nombre-apellido">
+                <input type="text" name="user" id="user" placeholder="Apellido de usuario" required>
+            </fieldset>
+            <fieldset>
+                <input type="text" name="mail" id="mail" placeholder="E-mail" required>
+            </fieldset>
+            <fieldset>
+                <legend>Fecha de nacimiento</legend>
+                <input type="date" name="fecha" id="fecha" value="mm/dd/yyyy" required>
+            </fieldset>
+            <fieldset>
+                <input type="domicilio" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+            </fieldset>
+            <fieldset class="form-perfil">
+                <legend>Perfil del usuario</legend>
+                <input type="radio" name="perfil" id="comprador" value="comprador">
+                <label for="comprador">Comprador</label>
+                <input type="radio" name="perfil" id="vendedor" value="vendedor">
+                <label for="vendedor">Vendedor</label>
+            </fieldset>
+            <fieldset class="form-intereses">
+                <legend>Intereses</legend>
+                <input type="checkbox" name="intereses" id="electro" value="electro">
+                <label for="electro">Electro</label>
+                <input type="checkbox" name="intereses" id="moda" value="moda">
+                <label for="moda">Moda</label>
+                <input type="checkbox" name="intereses" id="hogar" value="hogar">
+                <label for="hogar">Hogar</label>
+                <input type="checkbox" name="intereses" id="jugueteria" value="jugueteria">
+                <label for="jugueteria">Jugueteria</label>
+                <input type="checkbox" name="intereses" id="vida" value="vida">
+                <label for="vida">Vida sana</label>
+            </fieldset>
+            <fieldset>
+                <legend>Foto de usuario</legend>
+                <input type="file" name="avatar" accept=".jpg" multiple required>
+            </fieldset>
+            <fieldset class="form-password">
+                <legend>Contraseña</legend>
+                <input type="password" name="clave" placeholder="Contraseña" required>
+                <input type="password" name="clave" placeholder="Confirmar contraseña" required>
+            </fieldset>
+            <div class="form-botones">
+                <button type="submit"><a href="/">Enviar</a></button>
+                <button type="reset"><a href="/">Cancelar</a></button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <section>
+                <i class="fas fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p class="cuerposTexto">Con Mercado Libre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section>
+                <i class="fas fa-gift"></i>
+                <h4>Envío gratis desde los $2.500</h4>
+                <p class="cuerposTexto">Solo por estar registrado en Mercado Libre tenés envíos gratis en miles de productos.  Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section>
+                <i class="fas fa-user-shield"></i>
+                <h4>Seguridad de principio a fin</h4>
+                <p class="cuerposTexto">¿No te gusta? ¡Devolvelo! En MercadoLibre no hay nada que no puedas hacer porque estás siempre protegid@</p>
+            </section>
+        </div>
+        <p class="cuerposTexto-copy">Copyright © 1999-2020 MercadoLibre S.R.L.</p>
+    </footer>
+</body>
+</html>

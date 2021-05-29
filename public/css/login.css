@@ -1,0 +1,42 @@
+/* Formulario */
+main form {
+    text-align: center;
+}
+main form input{
+    width: 70%;
+    border-radius:5px;
+    padding:0.5rem;
+    margin: 1rem;
+}
+/*Boton de envio */
+main form button{
+    background-color:#03264C;
+    color:#fff;
+    width:70vw;
+    border-radius:5px;
+    padding: 1rem;
+    margin: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+main button:hover{
+    background-color:#0022AA;
+}
+main button a{
+    color:#fff;
+    text-decoration: none;
+}
+
+/**************** MEDIA QUERIES ****************/
+/* Tablet */
+@media (min-width: 361px){
+    /* Cuerpo */
+    main section{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }   
+}
+/* Desktop */
+@media (min-width:769px){
+    
+}

@@ -1,0 +1,145 @@
+/***************** ETIQUETAS **********************/
+main section{
+    width:90%;
+    margin:auto;
+}
+main section h2{
+    width:100%;
+}
+/***************** CLASES **********************/
+.banner img{
+    width: 100vw;
+}
+.titulares{
+    font-size:24px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/*productos dentro de articles*/
+.productos{
+    margin-bottom: 20px;
+    height:100%;
+    background-color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+.productos figure{
+    max-width: 100%;
+    padding:10px;
+}
+.productos img{
+    max-width: 100%;
+}
+/*logo, precio, descuento y descripcion*/
+.productoElementos{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display:block;
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+/*Nombre de producto*/
+.productoElementos h3{
+    padding-top:1rem;
+}
+/*camion de envio verde*/
+.envio i{
+    font-size: 16px;
+    padding:5px;
+    width:30px;
+    height:30px;
+    display: block;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius:50%;
+    position: absolute;
+    right: 20px;
+    top:-15px;
+}
+/*precio y descuento*/
+.precio-desc{
+    display:flex;
+    flex-basis: 90vw;
+    flex-direction:row;
+    align-items:center;
+}
+/* Precio de productos*/
+.precios{
+    font-size:18px;
+    display: flex;
+    flex-basis: 30%;
+    justify-content: center;
+}
+.descuentos{
+    color: #39b54a;
+    font-size:16px;
+    display:flex;
+    flex-basis: 70%;
+    justify-content:space-around;
+}
+.descripcion{
+    display:inline-block;
+    visibility: hidden;
+    height: 0vw;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.productos:hover > .productoElementos > .descripcion{
+    visibility: visible;
+    height:13vh;
+}
+.productos:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+@keyframes rotar {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+.productos:hover > .productoElementos .envio i{
+    animation: rotar 0.5s ease-in-out;
+}
+
+/**************** MEDIA QUERIES ****************/
+/* Tablet */
+@media (min-width: 361px){
+/************* ETIQUETAS **************/
+    /* Cuerpo */
+    main section{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+/************* CLASES ***************/
+    /* Cuerpo */
+    .titulares{    
+        max-width: 81vw;
+        margin: auto;
+    }
+    .productos{
+        max-width:40%;
+    }
+}
+
+/* Desktop */
+@media (min-width:769px){
+/************* ETIQUETAS **************/
+    /* Cuerpo */
+    main section{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+/************* CLASES ***************/
+    /* Cuerpo */
+    .titulares{    
+        max-width: 86vw;
+        margin: auto;
+    }
+    .productos{
+        max-width:20%;
+    }
+}
