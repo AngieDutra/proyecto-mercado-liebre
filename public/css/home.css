@@ -8,7 +8,7 @@ main section h2{
 }
 /***************** CLASES **********************/
 .banner img{
-    width: 100vw;
+    width: 100%;
 }
 .titulares{
     font-size:24px;
