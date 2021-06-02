@@ -1,21 +1,30 @@
+main{
+    background:#E9E9E9;
+    padding:200px 0 400px;
+}
 /* Formulario */
 main form {
-    text-align: center;
+    margin:auto;
+    padding:30px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 10px;
+    background-color:#fff;
+    width: 100%;
 }
 main form input{
-    width: 70%;
+    width: 100%;
+    border:1px solid #E9E9E9;
     border-radius:5px;
     padding:0.5rem;
-    margin: 1rem;
 }
 /*Boton de envio */
 main form button{
     background-color:#03264C;
     color:#fff;
-    width:70vw;
+    width:50%;
     border-radius:5px;
     padding: 1rem;
-    margin: 1rem;
+    margin-top:30px;
     transition: all 0.5s ease-in-out;
 }
 main button:hover{
@@ -25,11 +34,19 @@ main button a{
     color:#fff;
     text-decoration: none;
 }
+main fieldset{
+    padding: 30px 0 0;
+}
 
 /**************** MEDIA QUERIES ****************/
 /* Tablet */
 @media (min-width: 361px){
-    /* Cuerpo */
+    main{
+        padding:170px 0 430px;
+    }
+    main form{
+        width:361px;
+    }
     main section{
         display:flex;
         flex-wrap: wrap;
@@ -38,5 +55,19 @@ main button a{
 }
 /* Desktop */
 @media (min-width:769px){
-    
+    main{
+        padding:160px 0 250px;
+    }
+    main h2{
+        width:100%;
+    }
+    main form{
+        width:600px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main fieldset{
+        width:45%;
+    }
 }
