@@ -91,6 +91,7 @@ main section h2{
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
+/* HOVERS */
 .productos:hover > .productoElementos > .descripcion{
     visibility: visible;
     height: fit-content;
@@ -99,12 +100,17 @@ main section h2{
 .productos:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
+.productos:hover figure{
+    width: 90%;
+    margin: auto;
+}
 .productos:hover > .productoElementos > h3{
     padding: 5px 0;
 }
 .productos:hover > .productoElementos .envio i{
     animation: rotar 0.5s ease-in-out;
 }
+/* ANIMACION */
 @keyframes rotar {
     100%{
         transform: rotateZ(360deg);

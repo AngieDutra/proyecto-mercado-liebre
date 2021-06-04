@@ -1,23 +1,41 @@
 /***************** ETIQUETAS **********************/
+main{
+    background:#E9E9E9;
+    padding:200px 0 400px;
+}
 main form {
+    margin:auto;
+    padding:30px 5px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 10px;
+    background-color:#fff;
     display:flex;
     flex-wrap: wrap;
     justify-content:center;
-    padding:2rem 0;
 }
 main form fieldset{
     width:90%;
 }
+main h3{
+    width:90%;
+    font-size:1rem;
+    padding:1rem;
+    text-align:center;
+}
 main fieldset input{
     width: 100%;
+    border:1px solid #E9E9E9;
+    border-radius:5px;
     padding:0.5rem;
-    border-radius: 5px;
+    font-size:1rem;
 }
+/* BOTONES */
 main button{
-    width: 40%;
+    width: 45%;
     background-color:#03264C;
+    border-radius:5px;
     padding:1rem;  
-    transition: all 1 ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 main button a{
     text-decoration: none;
@@ -27,6 +45,7 @@ main button:hover{
     background-color: #0022AA;
 }
 /***************** CLASES **********************/
+/* LISTAS (perfil e intereses*/
 .form-intereses, .form-perfil{
     display:flex;
     flex-wrap: wrap;
@@ -39,9 +58,11 @@ main button:hover{
     width:90%;
     padding:1.2rem;
 }
+/* Contraseña */
 .form-password{  
     flex-direction:column;
 }
+/* BOTONES */
 .form-botones{
     width:90%;
     padding: 2rem;
@@ -51,14 +72,24 @@ main button:hover{
 /**************** MEDIA QUERIES ****************/
 /* Tablet */
 @media (min-width: 361px){
+    main{
+        padding:155px 0 430px;
+    }
+    main form {
+        width: 361PX;
+    }
     .nombre-apellido{
         width:45%;
     }
 }
 /* Desktop */
 @media (min-width:769px){
+    main{
+        padding:160px 0 270px;
+    }
     main form{
         align-items:center;
+        width:600px;
     }
     main form fieldset{
         width:45%;

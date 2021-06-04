@@ -49,21 +49,27 @@
     </header>
     <main>
         <form action="/" method="POST" enctype="multipart/form-data">
+            <h2>Regístrate</h2>
+            <h3>Forma parte y accede a todo lo que tenemos para ofrecerte.</h3>
             <fieldset class="nombre-apellido">
-                <input type="text" name="name" id="name" placeholder="Nombre y Apellido" required>
+                <legend>Nombre y Apellido</legend>
+                <input type="text" name="name" id="name" placeholder="María Fernandez" required>
             </fieldset>
             <fieldset class="nombre-apellido">
-                <input type="text" name="user" id="user" placeholder="Nombre de usuario" required>
+                <legend>Nombre de usuarix</legend>
+                <input type="text" name="user" id="user" placeholder="Mercado Liebre" required>
             </fieldset>
             <fieldset>
-                <input type="email" name="mail" id="mail" placeholder="E-mail" required>
+                <legend>Ingresa tu email</legend>
+                <input type="email" name="mail" id="mail" placeholder="mercadoliebre@gmail.com" required>
             </fieldset>
             <fieldset>
                 <legend>Fecha de nacimiento</legend>
                 <input type="date" name="fecha" id="fecha" value="mm/dd/yyyy" required>
             </fieldset>
             <fieldset>
-                <input type="domicilio" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+                <legend>Domicilio</legend>
+                <input type="domicilio" name="domicilio" id="domicilio" placeholder="Av. del Libertador 101, Vicente López, Provincia de Buenos Aires" required>
             </fieldset>
             <fieldset class="form-perfil">
                 <legend>Perfil del usuario</legend>
