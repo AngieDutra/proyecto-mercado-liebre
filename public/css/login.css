@@ -9,6 +9,16 @@ main form {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     border-radius: 10px;
     background-color:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+main form h2{
+    text-align:center;
+}
+main fieldset{
+    padding: 30px 0 0;
+    width: 100%;
 }
 main form input{
     width: 100%;
@@ -33,9 +43,6 @@ main button:hover{
 main button a{
     color:#fff;
     text-decoration: none;
-}
-main fieldset{
-    padding: 30px 0 0;
 }
 
 /**************** MEDIA QUERIES ****************/
@@ -63,11 +70,5 @@ main fieldset{
     }
     main form{
         width:600px;
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    main fieldset{
-        width:45%;
     }
 }

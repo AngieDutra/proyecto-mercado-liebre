@@ -19,7 +19,7 @@ main form fieldset{
 main h3{
     width:90%;
     font-size:1rem;
-    padding:1rem;
+    padding:1rem 0 2rem;
     text-align:center;
 }
 main fieldset input{
